@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<!-- Head Section -->
+
+<head>
+    <title>Final</title>
+</head>
+<!-- Body Section -->
+
+<body>
+    <header>
+        <h1>Final</h1> </header>
+    <main>
+    <script type="text/javascript">
+    // Create an array to hold the three even numbers
+    var randomEvenNumbers = new Array();
+        
+    // Create a variable to store the MAX_SIZE of the array. In this case, the value is three
+    var MAX_SIZE = 3;
+        
+    // Create a variable to temporarily store the generated random number
+    var temp = 0;
+        
+    // While the array length is less than three
+    while(MAX_SIZE > randomEvenNumbers.length){
+        // Generate random numbers between 1 and 100
+        temp = Math.floor((Math.random()* 100) + 1);
+        
+        // Check if the random number is even
+        if(temp % 2 == 0){
+        // If the random number is even, populate the array with the random number
+        randomEvenNumbers.push(temp);
+        alert("randomEvenNumbers: " + randomEvenNumbers);
+        alert("randomEvenNumbers.length: " + randomEvenNumbers.length);    
+        }
+    }    
+        
+    // Print the array using a for..in loop
+    for(var eachNumber in randomEvenNumbers){
+        document.write(randomEvenNumbers[eachNumber]);
+        document.write("<br/>");
+    }    
+        
+    </script>    
+    </main>
+    <footer>Footer Content</footer>
+</body>
+
+</html>
